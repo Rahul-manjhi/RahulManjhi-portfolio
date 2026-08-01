@@ -34,7 +34,7 @@ function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
       >
-        Technical Support Executive | ERP Systems | Coder | Problem Solver
+        Technical Support Executive | ERP Systems | Coder | Problem Solver | MultiTasker
       </motion.p>
 
       <motion.p

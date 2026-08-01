@@ -15,10 +15,24 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.4.0"
   },
+
+------------------------------------------
+   // "scripts": {
+  //   "start": "react-scripts start",
+  //   "build": "react-scripts build",
+  //   "predeploy": "npm run build",
+  //   "deploy": "gh-pages -d build"
+  // },
+
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
+
+use only one script at a time
+
+ -------------------------------------------- 
   "browserslist": {
     "production": [
       ">0.2%",
