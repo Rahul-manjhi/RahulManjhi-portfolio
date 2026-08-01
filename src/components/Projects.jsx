@@ -6,32 +6,46 @@ function Projects() {
       title: "AI Voice Assistant",
       description: "Python-based assistant with speech-to-text, text-to-speech, and Gemini AI integration; deployed via Flask.",
       image: process.env.PUBLIC_URL + "/Aichatbot.png",
-      link: "https://github.com/Rahul-manjhi"
+      // link: "https://github.com/Rahul-manjhi"
+      link: "https://github.com/Rahul-manjhi/Beginner-level-python-chatbot-project"
     },
     {
       title: "Full-Stack Todo App",
       description: "Built with Spring Boot (Java), REST APIs, and a JavaScript frontend.",
       image: process.env.PUBLIC_URL + "/TodoApp.png",
-      link: "https://github.com/Rahul-manjhi"
+      // link: "https://github.com/Rahul-manjhi"
+      link: "https://github.com/Rahul-manjhi/Full-Stack-Todo-App"
     },
     {
       title: "Employee Management System",
       description: "Full-stack web app with Node.js, Express, and React.",
       image: process.env.PUBLIC_URL + "/EmployeeManagement.png",
-      link: "https://github.com/Rahul-manjhi"
+      // link: "https://github.com/Rahul-manjhi"
+      link:"https://github.com/Rahul-manjhi/Employee-Management-System"
     },
     {
       title: "Registration & Login System",
       description: "Built in C++ for secure user registration and login.",
       image: process.env.PUBLIC_URL + "/RegistrationLogin.png",
+      // link: "https://github.com/Rahul-manjhi"
       link: "https://github.com/Rahul-manjhi"
     },
     {
       title: "Snake Game",
       description: "A full-stack web-based Cyberpunk Snake Game built using Node.js, Express, HTML5, CSS3, and JavaScript.",
       image: process.env.PUBLIC_URL + "/snake.png",
-      link: "https://github.com/Rahul-manjhi"
+      // link: "https://github.com/Rahul-manjhi"
+      link: "https://github.com/Rahul-manjhi/Snake-Game"
     },
+
+    {
+      title: "Library-Management-System",
+      description: "A complete full-stack web application upgraded from a C++ console-based program into a modern web interface powered by Node.js, Express, and SQLite.",
+      image: process.env.PUBLIC_URL + "/library.png",
+      // link: "https://github.com/Rahul-manjhi"
+      link: "https://github.com/Rahul-manjhi/Library-Management-System"
+    },
+
   ];
 
   return (
