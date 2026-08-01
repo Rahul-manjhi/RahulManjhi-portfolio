@@ -1,40 +1,38 @@
 import { motion } from "framer-motion";
 
 function Projects() {
-
-const projects = [
+  const projects = [
     {
       title: "AI Voice Assistant",
       description: "Python-based assistant with speech-to-text, text-to-speech, and Gemini AI integration; deployed via Flask.",
-      // image: "/Aichatbot.png",
       image: process.env.PUBLIC_URL + "/Aichatbot.png",
       link: "https://github.com/Rahul-manjhi"
     },
     {
       title: "Full-Stack Todo App",
       description: "Built with Spring Boot (Java), REST APIs, and a JavaScript frontend.",
-      // image: "/TodoApp.png",
       image: process.env.PUBLIC_URL + "/TodoApp.png",
       link: "https://github.com/Rahul-manjhi"
     },
     {
       title: "Employee Management System",
       description: "Full-stack web app with Node.js, Express, and React.",
-      // image: "/EmployeeManagement.png",
       image: process.env.PUBLIC_URL + "/EmployeeManagement.png",
       link: "https://github.com/Rahul-manjhi"
     },
     {
       title: "Registration & Login System",
       description: "Built in C++ for secure user registration and login.",
-      // image: "/RegistrationLogin.png",
       image: process.env.PUBLIC_URL + "/RegistrationLogin.png",
       link: "https://github.com/Rahul-manjhi"
     },
+    {
+      title: "Snake Game",
+      description: "A full-stack web-based Cyberpunk Snake Game built using Node.js, Express, HTML5, CSS3, and JavaScript.",
+      image: process.env.PUBLIC_URL + "/snake.png",
+      link: "https://github.com/Rahul-manjhi"
+    },
   ];
-
-
-  // _________________-------------
 
   return (
     <section id="projects" className="py-20 bg-gray-900 text-center">
@@ -48,8 +46,12 @@ const projects = [
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.3 }}
           >
-               
-            <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+            {/* 👇 Image size updated here */}
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="w-32 h-32 object-cover mx-auto mt-6 rounded-md"
+            />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-purple-300">{project.title}</h3>
               <p className="text-gray-400 mt-2">{project.description}</p>
@@ -62,8 +64,6 @@ const projects = [
                 View Project
               </a>
             </div>
-          
-
           </motion.div>
         ))}
       </div>
@@ -72,8 +72,3 @@ const projects = [
 }
 
 export default Projects;
-
-
-
-// __________________________-------------------------------
-

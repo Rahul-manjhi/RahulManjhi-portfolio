@@ -5,6 +5,7 @@ function Skills() {
     { category: "Programming Languages", items: ["Java", "Python", "C/C++"] },
     { category: "Web Technologies", items: ["HTML", "CSS", "Bootstrap", "JavaScript"] },
     { category: "Databases & Tools", items: ["SQL", "Excel", "Power BI"] },
+    { category: "Version Control", items: ["Git Bash", "GitHub"] },
   ];
 
   return (
