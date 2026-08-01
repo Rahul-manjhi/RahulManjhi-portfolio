@@ -6,25 +6,29 @@ const projects = [
     {
       title: "AI Voice Assistant",
       description: "Python-based assistant with speech-to-text, text-to-speech, and Gemini AI integration; deployed via Flask.",
-      image: "/Aichatbot.png",
+      // image: "/Aichatbot.png",
+      image: process.env.PUBLIC_URL + "/Aichatbot.png",
       link: "https://github.com/Rahul-manjhi"
     },
     {
       title: "Full-Stack Todo App",
       description: "Built with Spring Boot (Java), REST APIs, and a JavaScript frontend.",
-      image: "/TodoApp.png",
+      // image: "/TodoApp.png",
+      image: process.env.PUBLIC_URL + "/TodoApp.png",
       link: "https://github.com/Rahul-manjhi"
     },
     {
       title: "Employee Management System",
       description: "Full-stack web app with Node.js, Express, and React.",
-      image: "/EmployeeManagement.png",
+      // image: "/EmployeeManagement.png",
+      image: process.env.PUBLIC_URL + "/EmployeeManagement.png",
       link: "https://github.com/Rahul-manjhi"
     },
     {
       title: "Registration & Login System",
       description: "Built in C++ for secure user registration and login.",
-      image: "/RegistrationLogin.png",
+      // image: "/RegistrationLogin.png",
+      image: process.env.PUBLIC_URL + "/RegistrationLogin.png",
       link: "https://github.com/Rahul-manjhi"
     },
   ];

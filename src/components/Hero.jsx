@@ -5,7 +5,8 @@ function Hero() {
     <section className="h-screen flex flex-col items-center justify-center text-center bg-gradient-to-r from-purple-900 via-gray-900 to-black">
       {/* Profile Image with Toss Effect */}
       <motion.img
-        src="/profile.jpg"
+        // src="/profile.jpg"
+        src={process.env.PUBLIC_URL + '/profile.jpg'}
         alt="Rahul Manjhi"
         className="w-40 h-40 rounded-full border-4 border-purple-500 shadow-lg mb-6"
         initial={{ scale: 0, rotate: -180 }}
