@@ -1,0 +1,44 @@
+# Quick Workflow Reference: Updating Live Portfolio After Code Changes
+
+Whenever you make updates to your source code (e.g., modifying components, text, or styling in `src/`), follow these exact terminal commands step-by-step to push the changes live to your `gh-pages` branch.
+
+---
+
+### Step 1: Make sure you are in the Root Folder of your project
+```bash
+cd C:\resume-website
+```
+
+### Step 2: Push your source code changes to the Master branch (Optional/Good Practice)
+```bash
+git add .
+git commit -m "Updated source code on master branch"
+git push origin master
+```
+
+### Step 3: Create a fresh production build
+```bash
+npm run build
+```
+
+### Step 4: Navigate into the build directory
+```bash
+cd build
+```
+
+### Step 5: Initialize Git and prepare the gh-pages branch
+```bash
+git init
+git checkout -b gh-pages
+```
+
+### Step 6: Stage, commit, and force push your updated build to GitHub
+```bash
+git add -A
+git commit -m "Update live portfolio changes"
+git remote add origin https://github.com/Rahul-manjhi/RahulManjhi-portfolio.git
+git push -f origin gh-pages
+```
+
+---
+*Note: After running these commands, wait 1-2 minutes for GitHub Pages to process, and your changes will be live on your portfolio URL!*
