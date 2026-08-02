@@ -1,19 +1,3 @@
-// import React from "react";
-
-// function Contact() {
-//   return (
-//     <section id="contact" className="p-10 bg-gray-900 text-white text-center">
-//       <h2 className="text-3xl font-bold mb-6">Contact</h2>
-//       <p>Email: <a href="mailto:Rahul1322rahul@gmail.com" className="text-blue-400">Rahul1322rahul@gmail.com</a></p>
-//       <p>Phone: <a href="tel:+917836997866" className="text-blue-400">+91-7836-99-7866</a></p>
-//       <p>GitHub: <a href="https://github.com/Rahul-manjhi" target="_blank" rel="noopener noreferrer" className="text-blue-400">Rahul-manjhi</a></p>
-//     </section>
-//   );
-// }
-
-// export default Contact;
-
-
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
@@ -24,10 +8,10 @@ function Contact() {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_3blhwqe",   // e.g. service_3blhwqe
-      "template_70yboqt",  // e.g. template_abcd123
+      "service_3blhwqe",   // tumhara service ID
+      "template_70yboqt",  // tumhara template ID
       form.current,
-      "Syc-g1XHe4aoM8XIB"    // e.g. XyZ123abc456
+      "Syc-g1XHe4aoM8XIB"  // tumhara public key
     ).then(
       (result) => {
         alert("Message sent successfully!");
@@ -73,11 +57,12 @@ function Contact() {
         </button>
       </form>
 
-      {/* Static Info (optional, keep if you want) */}
+      {/* Static Info */}
       <div className="mt-8 space-y-2">
         <p>Email: <a href="mailto:Rahul1322rahul@gmail.com" className="text-blue-400">Rahul1322rahul@gmail.com</a></p>
         <p>Phone: <a href="tel:+917836997866" className="text-blue-400">+91-7836-99-7866</a></p>
-        <p>GitHub: <a href="https://github.com/Rahul-manjhi" target="_blank" rel="noopener noreferrer" className="text-blue-400">Rahul-manjhi</a></p>
+        <p>GitHub: <a href="https://github.com/Rahul-manjhi" target="_blank" rel="noopener noreferrer" className="text-blue-400">Rahul</a></p>
+              
       </div>
     </section>
   );
