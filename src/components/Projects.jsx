@@ -14,7 +14,7 @@ function Projects() {
       description: "Built with Spring Boot (Java), REST APIs, and a JavaScript frontend.",
       image: process.env.PUBLIC_URL + "/TodoApp.png",
       // link: "https://github.com/Rahul-manjhi"
-      link: "https://github.com/Rahul-manjhi/Full-Stack-Todo-App"
+      link: "https://github.com/Rahul-manjhi/Todo-App"
     },
     {
       title: "Employee Management System",

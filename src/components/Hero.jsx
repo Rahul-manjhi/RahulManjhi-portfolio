@@ -25,7 +25,7 @@ function Hero() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        Rahul Manjhi
+        Rahul
       </motion.h1>
 
       <motion.p
@@ -34,7 +34,7 @@ function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
       >
-        Fullstack Developer | Data Analyst | Coder | Problem Solver | MultiTasker
+        Fullstack Developer | Data Analyst | Vibe Coder | Problem Solver | MultiTasker
       </motion.p>
 
       <motion.p
