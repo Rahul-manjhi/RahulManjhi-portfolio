@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import { motion } from "framer-motion";
 
 function Contact() {
   const form = useRef();
+  const [submitted, setSubmitted] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,7 +16,14 @@ function Contact() {
       "Syc-g1XHe4aoM8XIB"  // tumhara public key
     ).then(
       (result) => {
-        alert("Message sent successfully!");
+        // ✅ Success animation trigger
+        setSubmitted(true);
+
+        // ✅ Auto refresh (clear form fields)
+        form.current.reset();
+
+        // Animation ko 3 sec baad hide karna
+        setTimeout(() => setSubmitted(false), 3000);
       },
       (error) => {
         alert("Failed to send message. Try again!");
@@ -57,12 +66,24 @@ function Contact() {
         </button>
       </form>
 
+      {/* ✅ Success Animation */}
+      {submitted && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mt-4 text-green-400 font-semibold"
+        >
+          ✅ Message Sent Successfully!
+        </motion.div>
+      )}
+
       {/* Static Info */}
       <div className="mt-8 space-y-2">
         <p>Email: <a href="mailto:Rahul1322rahul@gmail.com" className="text-blue-400">Rahul1322rahul@gmail.com</a></p>
         <p>Phone: <a href="tel:+917836997866" className="text-blue-400">+91-7836-99-7866</a></p>
         <p>GitHub: <a href="https://github.com/Rahul-manjhi" target="_blank" rel="noopener noreferrer" className="text-blue-400">Rahul</a></p>
-              
       </div>
     </section>
   );
