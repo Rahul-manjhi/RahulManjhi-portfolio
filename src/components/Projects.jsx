@@ -46,6 +46,14 @@ function Projects() {
       link: "https://github.com/Rahul-manjhi/Library-Management-System"
     },
 
+    {
+      title: "Web Galley with Admin Panel",
+      description: "A modern, fully responsive media gallery and administrative portal built with React and Tailwind CSS. It features automated local asset scanning, smooth custom CSS animations, glassmorphism UI design, an autoplay media slideshow, and a secure login system.",
+      image: process.env.PUBLIC_URL + "/gallery.png",
+      // link: "https://github.com/Rahul-manjhi"
+      link: "https://github.com/Rahul-manjhi/DYNAMIC-WEB-GALLERY-ADMIN-PORTAL"
+    },
+
   ];
 
   return (
