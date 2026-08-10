@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Rahul-portfolio/static/css/main.29a591e6.css",
+    "main.js": "/Rahul-portfolio/static/js/main.8172aaf0.js",
+    "index.html": "/Rahul-portfolio/index.html",
+    "main.29a591e6.css.map": "/Rahul-portfolio/static/css/main.29a591e6.css.map",
+    "main.8172aaf0.js.map": "/Rahul-portfolio/static/js/main.8172aaf0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29a591e6.css",
+    "static/js/main.8172aaf0.js"
+  ]
+}
