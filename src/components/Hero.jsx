@@ -51,8 +51,7 @@ function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 1.2 }}
       >
-        <a
-          href="/resume.pdf"
+        <a href="/resume.pdf"
           download
           className="px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg shadow-md"
         >
