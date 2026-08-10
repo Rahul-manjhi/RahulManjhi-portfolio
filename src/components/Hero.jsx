@@ -51,8 +51,10 @@ function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 1.2 }}
       >
-        <a href="/resume.pdf"
-          download
+        <a 
+          // href="/resume.pdf"
+          href="https://drive.google.com/file/d/1NsGrvLdpBOYnpyt3jKxsezdosw5D3U7f/view?usp=sharing"
+          download ="Rahul_Resume.pdf"
           className="px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg shadow-md"
         >
           Download Resume
